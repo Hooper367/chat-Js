@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.chat{
+    max-height: 90vh;
+    min-height: 350px;
+}
+.chat::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+.chat-ctn{
+    position: relative;
+}
+.arrow{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: -5px;
+    z-index: -1;
+}
+.arrow-user{
+    right: 30px;
+    transform: rotate(25deg);
+}
+.arrow-contact{
+    left: 30px;
+    transform: rotate(-25deg);
+}
+
+.round-text{
+height: 15px;
+width: 15px;
+border-radius: 50%;
+background: rgb(118, 108, 108);
+animation: animate 0.8s ease-out infinite;
+margin-left: 8px;
+
+}
+
+@keyframes animate {
+    0%{
+        transform: translateY(0px);
+    }
+    25%{
+        transform: translateY(4px);
+    }
+    50%{
+        transform: translateY(8px);
+    }
+    75%{
+        transform: translateY(4px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.round-text:nth-child(2){
+    animation-delay: 0.2s;
+
+}
+.round-text:nth-child(3){
+    animation-delay: 0.4s;
+
+}
